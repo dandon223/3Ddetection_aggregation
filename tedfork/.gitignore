@@ -1,0 +1,8 @@
+build/*
+*__pycache__*
+*.so
+pcdet.egg-info/
+data/
+tools/ckpt/
+log.txt
+output/

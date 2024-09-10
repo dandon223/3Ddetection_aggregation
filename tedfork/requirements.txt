@@ -1,0 +1,11 @@
+numpy==1.23
+numba
+tensorboardX
+easydict
+pyyaml
+scikit-image
+tqdm
+spconv-cu111
+opencv-python
+prefetch_generator
+nuscenes-devkit==1.0.5

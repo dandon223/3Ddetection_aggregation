@@ -1,0 +1,16 @@
+{
+    "annotation_reading_params": {
+        "dt_path": "../outputs/fgr_yolo3/nuscenes_output.json"
+    },
+    "map_params":{
+        "dataroot": "/data/sets/nuscenes/v1.0-trainval/v1.0-trainval",
+        "version": "v1.0-trainval",
+        "use_camera": "False",
+        "use_lidar": "True",
+        "use_radar": "True",
+        "use_map": "False",
+        "use_external": "False",
+        "detection_config_file": "configs/detection_cvpr_2019.json",
+        "classes": ["car"]
+    }
+}

@@ -1,0 +1,74 @@
+[07/27 12:30:49] main-logger INFO: a: 0.0125
+arch: unet_spherical_transformer
+aug: True
+base_lr: 0.006
+batch_size: 8
+batch_size_val: 4
+block_reps: 2
+block_residual: True
+class_weight: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+classes: 22
+data_name: waymo
+data_root: YOUR_DATA_ROOT/waymo_semantickitti_format
+dist_backend: nccl
+dist_url: tcp://127.0.0.1:40753
+distributed: True
+drop_path_rate: 0.3
+drop_rate: 0.5
+epochs: 50
+eval_freq: 1
+evaluate: True
+fea_dim: 6
+grad_checkpoint_layers: []
+ignore_label: 255
+input_c: 4
+layers: [32, 64, 128, 256, 256]
+loss_gamma: 2.0
+loss_name: focal_loss
+m: 32
+manual_seed: 123
+max_batch_points: 1000000
+meanvoxel: False
+mix_transformer: True
+momentum: 0.9
+multiplier: 0.1
+multiprocessing_distributed: True
+ngpus_per_node: 4
+patch_size: [0.1 0.1 0.1]
+pc_range: [[-75.2, -75.2, -2], [75.2, 75.2, 4]]
+power: 0.9
+print_freq: 10
+quant_size_scale: 24
+rank: 0
+rel_key: True
+rel_query: True
+rel_value: True
+resume: None
+save_freq: 1
+save_path: runs/waymo_unet32_spherical_transformer
+scheduler: Poly
+scheduler_update: step
+sphere_layers: [1, 2, 3, 4, 5]
+split: val
+start_epoch: 0
+step_epoch: 30
+sync_bn: True
+train_gpu: [0, 1, 2, 3]
+transformer_lr_scale: 0.1
+use_amp: False
+use_tta: False
+use_xyz: True
+val: False
+val_meanvoxel: True
+vote_num: 4
+voxel_max: 160000
+voxel_size: [0.1, 0.1, 0.1]
+weight: None
+weight_decay: 0.01
+window_size: 6
+window_size_scale: [2.0, 1.5]
+window_size_sphere: [1.5, 1.5, 80]
+workers: 16
+world_size: 4
+xyz_norm: False
+[07/27 12:30:49] main-logger INFO: use SyncBN

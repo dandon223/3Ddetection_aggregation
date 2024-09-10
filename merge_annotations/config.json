@@ -1,0 +1,9 @@
+{
+    "annotation_files":{
+        "TED": "outputs/ted/700scenerios/nuscenes_output.json",
+        "SPHEREFORMER": "outputs/sphereformer/700scenerios/nuscenes_output.json",
+        "FGR": "outputs/fgr_yolo3/nuscenes_output.json"
+    },
+    "strategy":[["TED", "SPHEREFORMER", 0.7], ["SPHEREFORMER", "FGR", 0.2], ["TED", "FGR", 0.2]],
+    "output_file":"outputs/merge_annotations/merge_with_strategy2/350scenerios/nuscenes_output2.json"
+}
